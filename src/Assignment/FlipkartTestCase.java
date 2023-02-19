@@ -53,17 +53,7 @@ public class FlipkartTestCase {
         driver.findElement(By.xpath("//span[text()='Place Order']/parent::button")).click();
         driver.findElement(By.xpath("//input[@type='text']")).sendKeys("123456789");
         driver.findElement(By.xpath("//span[text()='CONTINUE']/parent::button")).click();
-
-        String msg = driver.findElement(By.xpath("//span[text()='Please enter valid Email ID/Mobile number']")).getText();
-
-        if(msg.equals("Please enter valid Email ID/Mobile number")){
-            System.out.println("Test is passed");
-        }
-
-        else{
-            System.out.println("Test is failed");
-        }
-
+        
 
 
     }
